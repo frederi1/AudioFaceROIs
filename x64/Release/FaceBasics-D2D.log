@@ -1,0 +1,86 @@
+﻿Build started 5/7/2015 6:12:40 PM.
+     1>Project "C:\Users\Kevin\Desktop\FaceBasics-D2D\FaceBasics-D2D.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (FaceBasics-D2D.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W1 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt FaceBasics.cpp ImageRenderer.cpp
+         FaceBasics.cpp
+         ImageRenderer.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"x64\Release\FaceBasics.res" FaceBasics.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kevin\Desktop\FaceBasics-D2D\x64\Release\AudioFaceROIs.exe" /INCREMENTAL:NO /NOLOGO Dwrite.lib kinect20.lib Kinect20.Face.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kevin\Desktop\FaceBasics-D2D\x64\Release\AudioFaceROIs.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kevin\Desktop\FaceBasics-D2D\x64\Release\AudioFaceROIs.lib" /MACHINE:X64 x64\Release\FaceBasics.res
+         x64\Release\FaceBasics.obj
+         x64\Release\ImageRenderer.obj
+         Generating code
+         Finished generating code
+         FaceBasics-D2D.vcxproj -> C:\Users\Kevin\Desktop\FaceBasics-D2D\x64\Release\AudioFaceROIs.exe
+       PostBuildEvent:
+         xcopy "C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase" "C:\Users\Kevin\Desktop\FaceBasics-D2D\x64\Release\NuiDatabase" /e /y /i /r
+         xcopy "C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\Kinect20.Face.dll" "C:\Users\Kevin\Desktop\FaceBasics-D2D\x64\Release\" /c /y
+               
+         :VCEnd
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\FaceAlignment.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\FaceAlignmentColor.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\FaceAlignmentColor27.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\FaceDetector.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\FaceOrientation.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\FaceTrackingColor27.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\ExpressionRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\EyeLeftRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\EyeRightRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\FacialHairIRRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\FacialHairRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\Feature.config
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\GlassesIRRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\GlassesRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\LookingAwayRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\MouthMovedRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\MouthOpenRandomForest.model
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\Expression\NuiExpressionModelManifest.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\AAMModel\3DModel.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\AAMModel\3DModel_globalPCA.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\AAMModel\AAMModelData_F.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\AAMModel\AAMModelData_HLP.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\AAMModel\AAMModelData_HRP.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_F.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_HLP.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_HRP.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\AAMModel\PCAMaskBias.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EvalModel\front.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EvalModel\Front.p.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EvalModel\front_nose.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EvalModel\left.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EvalModel\left.p.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EvalModel\left_nose.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EvalModel\right.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EvalModel\right.p.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EvalModel\right_nose.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EyeState\EyeClose.pra
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EyeState\EyeClose.wgh
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EyeState\LeftCloseRightOpen44Flip.pra
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EyeState\LeftCloseRightOpen44Flip.wgh
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EyeState\LeftOpenRightClose44Flip.pra
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\EyeState\LeftOpenRightClose44Flip.wgh
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\MouthModel\close.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\MouthModel\close.p.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\MouthModel\lopen.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\MouthModel\lopen.p.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\MouthModel\MeanShapes.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\SkintoneModel\skintone_appearance_classifier.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\SkintoneModel\skintone_shape_classifier.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\ViewModel\front.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\ViewModel\front.p.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\ViewModel\left.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\ViewModel\left.p.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\ViewModel\right.mod.bin
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\ViewModel\right.p.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\WholeHeadModel\FullHeadMaskVertexCorrespondence.txt
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\NuiDatabase\HDFaceTracker\WholeHeadModel\fullMeanHead60_tri.ply
+         57 File(s) copied
+         C:\Program Files\Microsoft SDKs\Kinect\v2.0-PublicPreview1409\Redist\Face\x64\Kinect20.Face.dll
+         1 File(s) copied
+     1>Done Building Project "C:\Users\Kevin\Desktop\FaceBasics-D2D\FaceBasics-D2D.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.52
